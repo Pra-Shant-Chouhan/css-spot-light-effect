@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+ body{
+    width:100%;
+    height:100%;
+    background-color: black;
+    color: white;
+}
+:root{
+    --red:rgb(121, 17, 17);
+    --x:200px;
+    --y:200px;
+}
+.box{
+    height:100%;
+    width: 100%;
+    border :10px solid white;
+    
+    /* background: linear-gradient(in oklab to bottom, white, red,purple); */
+    /* background:radial-gradient(50px ,red, blue); */
+    /* background:radial-gradient(50px at 50px 300px,red, blue); */
+    /* background:radial-gradient(50px at x-axis y-axis,red, blue);  parameter example of axis*/
+    /* background-color: var(--red); */
+    background:radial-gradient(200px at var(--x) var(--y), red, blue);
+
+}
